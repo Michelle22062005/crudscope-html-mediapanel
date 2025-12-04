@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel:wght@400..900&family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <base href="https://github.com/Michelle22062005/crudscope-html-mediapanel">
+    
+    <title>crudscope-html-mediapanel</title>
+</head>
+<body>
+    <header class="encabezado">
+        <h1>HTML y CSS</h1>
+        <p>Es una pagina para organizar tareas de manera ordenada</p>
+    </header>
+
+    <nav class="navegacion">
+        <a href="#">Crear</a>
+        <a href="#">Listado</a>
+        <a href="#">Multimedia</a>
+        <a href="#">Acerca de</a>
+    </nav>
+
+    <main class="cuerpo">
+        <section class="crear">
+            
+            <article>
+                <h2>Crear  tarea</h2>
+                <p>Es para subir las tareas  de html</p>
+
+                <!--Seccion de CRUD (maqueta)-->
+                <form action="" method="post">
+                    <label for="nombre">Nombre:
+                        <input type="text" name="name" placeholder="Ingrese tu nombre">
+                    </label>
+                    <label for="modulo">Modulo:
+                        <input type="number" name="number" placeholder="Escriba el numero del modulo">
+                    </label>
+
+                    <label for="fecha">Fecha:
+                        <input type="datetime" name="datetime" placeholder="Ingrese la fecha">
+                    </label>
+                    <label for="mensaje">Mensaje:
+                    <textarea id="mensaje" name="mensaje" placeholder="Ingrese su mensaje" required></textarea>
+                </label>
+                    <button  type="submit">Enviar</button>
+                    <button type="submit">Actualizar</button>
+                    <button type="submit">Eliminar</button>
+                </form>
+                <p>En programación, <strong><abbr title="Create, Read, Update, Delete">CRUD</abbr> </strong>es un conjunto de operaciones básicas para trabajar con bases de datos.</p>
+            </article>
+
+            <aside class="estado-tarea">
+                <h3>Este el estado de la tarea</h3>
+                <img src="https://raw.githubusercontent.com/Michelle22062005/crudscope-html-mediapanel/main/imagenes-html/imag1.jpeg" alt="logo de html" width="50px" height="100px">
+                <ul>
+                    <li><span style="color: blueviolet;">Entregado</span></li>
+                    <li><span style="color: blueviolet;">Pendiente</span></li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="listado">
+            <h2>Listado de tareas</h2>
+
+            <article>
+                <p>Este es el listados de las tareas realizadas</p>
+            </article>
+
+            <table>
+                <tr>
+                    <th>Actividad</th>
+                    <th>Enlace</th>
+                    <th>Modulo</th>
+                </tr>
+                <tr>
+                    <td>taller 1</td>
+                    <td>modulo 1</td>
+                    <td><time datetime="2025-12-03">03 de noviembre de 2025</time></td>
+                </tr>
+            </table>
+
+            <aside>
+                <h3>Ayuda</h3>
+                <p>En esta sección encontrarás el apoyo que necesitas para comprender, organizar y completar tus actividades académicas. Nuestro objetivo es brindarte explicaciones claras, ejemplos prácticos y orientación paso a paso para que puedas resolver tus tareas con <i>confianza</i>. Aquí podrás <u>aprender</u> de forma sencilla, reforzar tus conocimientos y mejorar tus resultados día a día..</p>
+            </aside>
+            
+        </section>
+
+        <!--Multimedia-->
+        <section class="multimedia">
+            <h2>Multimedia del sistema</h2>
+                <p>Un audio para escuchar una canción</p>
+                <audio controls>
+                <source src="https://raw.githubusercontent.com/Michelle22062005/crudscope-html-mediapanel/main/imagenes-html/music.mp3" type="audio/mpeg">
+                
+            </audio>
+                <p>Un video de un gato</p>
+                <video width="320" height="240" controls>
+                    <source src="https://raw.githubusercontent.com/Michelle22062005/crudscope-html-mediapanel/main/imagenes-html/gato.mp4" type="video/mp4">
+                </video>
+                
+        </section>
+
+    </main>
+    <footer>
+        <p> Danna Oyola</p>
+        <p>2025</p>
+        <p>Contacto: <a href="https://github.com/dashboard">https://github.com/dashboard</a></p>
+        <address>danna2206mi@gamil.com</address>
+    </footer>
+</body>
+</html>

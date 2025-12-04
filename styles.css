@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    background-color: #d2f1f6;
+}
+.encabezado {
+    background-color: #f868db;
+    color: white;
+    padding: 5px ;
+    text-align: center;
+}
+.encabezado h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.navegacion {
+    background-color: #9c39d2;
+    overflow: hidden;
+}
+.navegacion a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+.cuerpo{
+    margin: auto ;
+    padding: 10px;
+    background-color: #f6d2f4;
+    width: 80%;
+}
+.crear, .listado, .multimedia {
+    border: 2px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.crear{
+    display: flex;
+    gap: 10px;
+    text-align: center;
+}
+.crear h2 {
+    margin-bottom: 10px;
+}
+.crear form label {
+    display: block;
+    margin-bottom: 10px;
+}
+/* Campos del formulario */
+input,textarea{
+    width: 100%;
+    max-width: 330px;
+    padding: 5px;
+    border: 2px solid #7838a2; 
+    border-radius: 10px;
+    background-color: #FFF7F1; 
+}
+
+
+/* Botón del formulario */
+button {
+    background-color: #FFB5C2; 
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.estado-tarea {
+    align-self: baseline;
+    width: 30%;
+    border-collapse: collapse;
+   
+}
+li{
+    list-style: none;
+}
+
+/*listado de tareas*/
+.listado table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.listado h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.listado th, .listado td {
+    border: 1px solid #000;
+    padding: 8px;
+    background-color: #e884d4;
+}
+
+/*Multimedia*/
+.multimedia {
+    text-align: center;
+}
+
+.multimedia h2 {
+    margin-bottom: 10px;
+}
+
+/*footer*/
+footer{
+    margin-top: 10px;
+    background-color: #d338b4;
+    color: white;
+    padding: 5px;
+}
